@@ -1,0 +1,1142 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rx_",
+				"rx_message"
+			],
+			[
+				"my_",
+				"my_eeprom_array"
+			],
+			[
+				"para",
+				"param_data"
+			],
+			[
+				"param",
+				"param_data"
+			],
+			[
+				"params",
+				"params_list"
+			],
+			[
+				"0x",
+				"0x18"
+			],
+			[
+				"traj",
+				"trajectory_pos_struct"
+			],
+			[
+				"data",
+				"data_read"
+			],
+			[
+				"calc",
+				"calcPosition"
+			],
+			[
+				"test",
+				"test_pos"
+			],
+			[
+				"current",
+				"current_pos"
+			],
+			[
+				"_cur",
+				"_current_vel"
+			],
+			[
+				"right",
+				"rightDOF"
+			],
+			[
+				"curre",
+				"_current_pos"
+			],
+			[
+				"fac",
+				"_face_id"
+			],
+			[
+				"mod",
+				"modManager"
+			],
+			[
+				"curren",
+				"current_velocity"
+			],
+			[
+				"left",
+				"leftDOF"
+			],
+			[
+				"mGre",
+				"mGreenOFF"
+			],
+			[
+				"mG",
+				"mGreenON"
+			],
+			[
+				"Del",
+				"DelayMilliseconds"
+			],
+			[
+				"mil",
+				"DelayMilliseconds"
+			],
+			[
+				"i2c",
+				"i2c_address"
+			],
+			[
+				"ob",
+				"objManager"
+			],
+			[
+				"handl",
+				"handleFacePing"
+			],
+			[
+				"motor",
+				"motor_cmds"
+			],
+			[
+				"lef",
+				"left_wheel_motor"
+			],
+			[
+				"mW",
+				"mWhiteON"
+			],
+			[
+				"tor",
+				"torque_struct"
+			],
+			[
+				"moto",
+				"motor_direction"
+			],
+			[
+				"set",
+				"set_motor_speed"
+			],
+			[
+				"righ",
+				"right_pantilt"
+			],
+			[
+				"left_",
+				"left_ptilt"
+			],
+			[
+				"le",
+				"left_ptilt"
+			],
+			[
+				"rig",
+				"right_ptilt"
+			],
+			[
+				"_",
+				"__packed__"
+			],
+			[
+				"__",
+				"__attribute__"
+			],
+			[
+				"typ",
+				"typedef"
+			],
+			[
+				"Ms",
+				"MsgTrajectoryPosition"
+			],
+			[
+				"Msg",
+				"MsgTrajectoryPositionType"
+			],
+			[
+				"MsgC",
+				"MsgCurrentStateType"
+			],
+			[
+				"mYell",
+				"mYellowON"
+			],
+			[
+				"MsgBra",
+				"MsgBrainIpType"
+			],
+			[
+				"mR",
+				"mRedOFF"
+			],
+			[
+				"De",
+				"DelayMilliseconds"
+			],
+			[
+				"mWh",
+				"mWhiteON"
+			],
+			[
+				"msg",
+				"msgManager"
+			],
+			[
+				"wifi",
+				"wifiSend"
+			],
+			[
+				"MsgB",
+				"MsgBrainIpType"
+			],
+			[
+				"mBl",
+				"mBlueOFF"
+			],
+			[
+				"m",
+				"mBlueON"
+			],
+			[
+				"max",
+				"max_pos"
+			],
+			[
+				"uin",
+				"uint8_t"
+			],
+			[
+				"wheel",
+				"wheel_control"
+			],
+			[
+				"traject",
+				"trajectory_speed_left"
+			],
+			[
+				"tilt",
+				"tilt_wheel_currentState"
+			],
+			[
+				"wheel_cu",
+				"wheel_currentState"
+			],
+			[
+				"traj_spee",
+				"trajectory_speed_pan"
+			],
+			[
+				"wheel_control",
+				"wheel_control_pan_tilt"
+			],
+			[
+				"right_wheel",
+				"right_wheel_currentState"
+			],
+			[
+				"ri",
+				"right_wheel_pid_controller"
+			],
+			[
+				"fae",
+				"face_num"
+			],
+			[
+				"P",
+				"PID_State"
+			],
+			[
+				"glo",
+				"global_flag_left"
+			],
+			[
+				"index",
+				"index_position_left"
+			],
+			[
+				"counte",
+				"counter_right_power_on"
+			],
+			[
+				"counter_le",
+				"counter_left_power_on"
+			],
+			[
+				"powe",
+				"power_on_flag"
+			],
+			[
+				"pan",
+				"pan_wheel_stateGoal"
+			],
+			[
+				"coef",
+				"coeff_1"
+			],
+			[
+				"face",
+				"face_num"
+			],
+			[
+				"fa",
+				"face_num"
+			],
+			[
+				"init",
+				"init_flag"
+			],
+			[
+				"updateTraj",
+				"updateTrajGoals"
+			],
+			[
+				"upd",
+				"update_times_left"
+			],
+			[
+				"section",
+				"sectionNum_left"
+			],
+			[
+				"end",
+				"endTime_left"
+			],
+			[
+				"time",
+				"timer_counter_tilt"
+			],
+			[
+				"timer",
+				"timer_counter_pan"
+			],
+			[
+				"tim",
+				"timer_counter_left"
+			],
+			[
+				"startTime",
+				"startTime_left"
+			],
+			[
+				"dur",
+				"duration_tilt"
+			],
+			[
+				"path",
+				"path_tilt"
+			],
+			[
+				"curr",
+				"current_velocity"
+			],
+			[
+				"current_pos",
+				"current_position"
+			],
+			[
+				"wheel_curr",
+				"pan_wheel_currentState"
+			],
+			[
+				"right_wh",
+				"right_wheel_currentState"
+			],
+			[
+				"ti",
+				"tilt_wheel_currentState"
+			],
+			[
+				"left_wheel_c",
+				"left_wheel_currentState"
+			],
+			[
+				"current_vel",
+				"current_velocity_tilt"
+			],
+			[
+				"current_ve",
+				"current_velocity_pan"
+			],
+			[
+				"cure",
+				"current_velocity"
+			],
+			[
+				"current_position",
+				"current_position_tilt"
+			],
+			[
+				"trajectory_spe",
+				"trajectory_speed_pan"
+			],
+			[
+				"trajectory_speed",
+				"trajectory_speed_right"
+			],
+			[
+				"tr",
+				"trajectory_speed_left"
+			],
+			[
+				"p_speed_",
+				"p_speed_pan"
+			],
+			[
+				"p_sp",
+				"p_speed_pan"
+			],
+			[
+				"p_",
+				"p_speed_left"
+			],
+			[
+				"wh",
+				"wheel_control_pan_tilt"
+			],
+			[
+				"Whe",
+				"Wheel_Controller_Pan_Tilt"
+			],
+			[
+				"right_whe",
+				"right_wheel_control"
+			],
+			[
+				"right_whee",
+				"right_wheel_control"
+			],
+			[
+				"whe",
+				"wheel_pid_controller_tilt"
+			],
+			[
+				"tilt_",
+				"tilt_wheel_stateGoal"
+			],
+			[
+				"msgContr",
+				"msgControlUpdateHandler"
+			],
+			[
+				"msgCon",
+				"msgControlSendHandler"
+			],
+			[
+				"cu",
+				"currentstate_struct"
+			],
+			[
+				"dat",
+				"dataManager"
+			],
+			[
+				"uint",
+				"uint16_t"
+			],
+			[
+				"Da",
+				"DATA_MANAGER_t"
+			],
+			[
+				"magn",
+				"magnet_struct"
+			],
+			[
+				"MsgTor",
+				"MsgTorqueType"
+			],
+			[
+				"coeff",
+				"coeff_2"
+			],
+			[
+				"traje",
+				"trajectory_veltx_struct"
+			],
+			[
+				"MsgTraj",
+				"MsgTrajectoryVelocity"
+			],
+			[
+				"MsgTra",
+				"MsgTrajectoryVelocityType"
+			],
+			[
+				"tra",
+				"trajectory_veltx_struct"
+			],
+			[
+				"trajectory",
+				"trajectory_postx_struct"
+			],
+			[
+				"coe",
+				"coeff_1"
+			],
+			[
+				"MsgTr",
+				"MsgTrajectoryVelocityTXType"
+			],
+			[
+				"MsgControl",
+				"MsgControlType"
+			],
+			[
+				"MsgModu",
+				"MsgModuleType"
+			],
+			[
+				"state",
+				"state"
+			],
+			[
+				"IHM_INPUT",
+				"IHM_INPUT_EVENT_TRAJ"
+			],
+			[
+				"devi",
+				"deviceManager"
+			],
+			[
+				"cc3000_",
+				"cc3000_is_connected"
+			],
+			[
+				"wlan",
+				"wlan_ioctl_set_scan_params"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "############################################################\n# CIS 521: Homework 2\n############################################################\n\nstudent_name = \"Gabrielle Merritt\"\n\n############################################################\n# Imports\n############################################################\n\n# Include your imports here, if any are used.\nimport numpy \nimport math \n\n############################################################\n# Section 1: N-Queens\n############################################################\n\ndef num_placements_all(n):\n    return math.factorial(n*n)/(math.factorial(n)*math.factorial(n*n - n))\n\ndef num_placements_one_per_row(n):\n    return n**n\n\n# With the answer to the previous question in mind, \n# a sensible representation for a board configuration is a \n# list of numbers between 00 and n−1n−1, where the iith number \n# designates the column of the queen in row ii for 0≤i<n0≤i<n. \n# A complete configuration is then specified by a list containing \n# nn numbers, and a partial configuration is specified by a list containing fewer than nn numbers\ndef n_queens_valid(board):\n    for i,i_queen in ennumerate(board):\n        for queen in board if i_queen == queen or i_queen+queen  \n\ndef n_queens_solutions(n):\n    pass\n\n############################################################\n# Section 2: Lights Out\n############################################################\n\nclass LightsOutPuzzle(object):\n\n    def __init__(self, board):\n        pass\n\n    def get_board(self):\n        pass\n\n    def perform_move(self, row, col):\n        pass\n\n    def scramble(self):\n        pass\n\n    def is_solved(self):\n        pass\n\n    def copy(self):\n        pass\n\n    def successors(self):\n        pass\n\n    def find_solution(self):\n        pass\n\ndef create_puzzle(rows, cols):\n    pass\n\n############################################################\n# Section 3: Linear Disk Movement\n############################################################\n\ndef solve_identical_disks(length, n):\n    pass\n\ndef solve_distinct_disks(length, n):\n    pass\n\n############################################################\n# Section 4: Feedback\n############################################################\n\nfeedback_question_1 = \"\"\"\nType your response here.\nYour response may span multiple lines.\nDo not include these instructions in your response.\n\"\"\"\n\nfeedback_question_2 = \"\"\"\nType your response here.\nYour response may span multiple lines.\nDo not include these instructions in your response.\n\"\"\"\n\nfeedback_question_3 = \"\"\"\nType your response here.\nYour response may span multiple lines.\nDo not include these instructions in your response.\n\"\"\"",
+			"file": "homework2.py",
+			"file_size": 2759,
+			"file_write_time": 130993601110000000,
+			"settings":
+			{
+				"buffer_size": 2651,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nAnaconda\n--------\n\n  # Anaconda\n  Anaconda turns your Sublime Text 3 into a full featured Python IDE. Read the plugin documentation on [http://damnwidget.github.io/anaconda](http://damnwidget.github.io/anaconda).\n  \n  \n  ## Getting Started\n  Anaconda works out of the box but there are multitude of options and features that you can tune and adapt to your own style or needs.\n  \n  * [Autocompletion on dot](http://damnwidget.github.io/anaconda/IDE/#toc_3)\n  * [Powerful IDE](http://damnwidget.github.io/anaconda/IDE/)\n  * [Advanced Configuration](http://damnwidget.github.io/anaconda/anaconda_settings/)\n  * [Run Tests using Anaconda](http://damnwidget.github.io/anaconda/tests_runner/)\n  * [Linting theme customization](http://damnwidget.github.io/anaconda/IDE/#toc_50)\n  * [Using Vagrant Environments](http://damnwidget.github.io/anaconda/vagrant/)\n  \n  ## License\n  This program is distributed under the terms of the GNU GPL v3. See the [LICENSE][license] file for more details.\n  \n  ## Tooltips\n  anaconda officially supports user themeable tooltips and displaying advanced signatures. This is how it looks in a dark theme:\n  \n  ![Tooltips Image][tooltips-dark-image]\n  \n  **Note**: This feature is enabled for users of Sublime Text 3 build 3070 or superior only.\n  \n  ## Troubleshooting\n  This section lists some common issues faced by users, along with workarounds.\n  \n  #### Anaconda does not appear in the Available Packages list on Package Control.\n  \n  **Work-around**: You have to update your Package Control version to the version 2.0 or better.\n  \n  #### Errors in the console about \"the file can't be open\" in worker.py file.\n  Your Sublime Text can't find the interpreter that you set in your configuration, by default, anaconda sets this as `python` so it will get your configured Python interpreter in your PATH (if any).\n  \n  **Work-around**: Add a Python interpreter (named `python`) to your PATH or set a right full path to your python interpreter as parameter of `python_interpreter` settings option, for example `/usr/local/bin/python3.4`.\n  \n  #### Auto-complete for import behaves badly.\n  Sublime Text 3's default Python package cancels the auto-completion when some words are detected (for example `def` or `class`). This list of words includes `import`.\n  \n  **Work-around**: Create a new Python directory in your Packages directory and copy the contents of the file [Completion Rules.tmPreferences][Completion-Rules] there with the same name.\n  Delete your Sublime Text Cache file `Cache/Python/Completion Rules.tmPreferences.cache`.\n  \n  **NOTE**: The cache path can be optained from the Sublime TExt 3 console using the code `sublime.cache_path()`\n  \n  #### Auto-complete drop-down shows up incorrectly.\n  SublimeCodeIntel interferes with anaconda's auto-completion.\n  \n  **Work-around**: Consider disabling SublimeCodeIntel for Python views or disabling/removing it completely when using anaconda.\n  \n  ## Contributing to Anaconda\n  There are several ways to contribute with anaconda.\n  \n  > Note: A [Developers Documentation book][dev-docs] is maintained up to date with the latest information about anaconda's internals and useful information about how to contribute to the project.\n  \n  ### Feedback\n  Giving feedback about the plugin and how it works in your platform, helps make the plugin better.\n  \n  ### Bug Hunting\n  Did you found a bug and you know how to fix it? First of all, Thank you very much. You just have to report the bug as a new issue, fork the repository, make your changes and send a new pull request.\n  \n  ### Suggesting and Implementing Features\n  So you thought of a new killer feature to implement in Anaconda? Great! Open an issue for it and and we will discuss it with you.\n  \n  ### Donations\n  Please donate to help keep this project alive.\n  \n  [![PayPal][paypal-donate-image]][paypal-donate-link]\n  [![Flatter][flatter-image]][flatter-link]\n  \n  [license]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/LICENSE\n  [Completion-Rules]: https://raw.githubusercontent.com/DamnWidget/anaconda/master/Completion%20Rules.tmPreferences\n  [dev-docs]: http://damnwidget.gitbooks.io/anacondast3-developers-documentation/\n  [paypal-donate-image]: https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif\n  [paypal-donate-link]: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KP7PAHR962UGG&lc=US&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted\n  [flatter-image]: https://api.flattr.com/button/flattr-badge-large.png\n  [flatter-link]: http://flattr.com/thing/1765332/DamnWidgetanaconda-on-GitHub\n  [tooltips-dark-image]: http://damnwidget.github.io/anaconda/img/tooltips.png\n",
+			"settings":
+			{
+				"buffer_size": 4731,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/Users/gabriellemerritt/Documents/spring2016/ai/hw/hw1/homework1.py",
+			"settings":
+			{
+				"buffer_size": 7371,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 539.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/gabriellemerritt/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/python/SmoresModule/MessageInterface.py",
+		"/Users/gabriellemerritt/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/python/wlc.py",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/python/SmoresModule/SmoresModule.py",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/wahoo.xml",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/diffuse.xml",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/hw04/diffuse_spheres.xml",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/weighted.xml",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/Raytracing_BVH/src/mygl.h",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/Raytracing_BVH/src/mytimer.h",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/Raytracing_BVH/src/mytimer.cpp",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/final_project/Raytracing_BVH/src/mygl.cpp",
+		"/Users/gabriellemerritt/Documents/gap2.html",
+		"/Users/gabriellemerritt/Documents/gap.html",
+		"/Users/gabriellemerritt/Documents/fall2015/vision/midterm/cis581cheat.tex",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/mod_state_manager.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/handlers.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/main.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/smores_dof.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/motor_setup.cpp",
+		"/Users/gabriellemerritt/Documents/fall2015/linalg/Homework/HW4/HW4.tex",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/autocalib/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/handlers.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/autocalib/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/stm_cali.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/stm32/Makefile",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/motor_setup.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/wifi.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/wifi.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/smores_dof.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/obj_manager.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_common/cpp/inc/Wheel_Control.h",
+		"/Users/gabriellemerritt/Documents/fall2015/linalg/Homework/HW3/HW3.tex",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/msg_manager.h",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/hw03/hw03_gmerritt/scene_files/mesh.xml",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/hw03/hw03_gmerritt/scene_files/wahoo.xml",
+		"/Users/gabriellemerritt/Documents/fall2015/graphics/hw03/hw03_gmerritt/scene_files/sphere_tex.xml",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/python/testCode.py",
+		"/Users/gabriellemerritt/Documents/tfs4.html",
+		"/Users/gabriellemerritt/Documents/TA/m2_build/main.c",
+		"/Users/gabriellemerritt/Documents/code_sample/computer_vision_sample/pose_estimation/init_script.m",
+		"/Users/gabriellemerritt/Documents/code_sample/computer_vision_sample/pose_estimation/estimate_pose.m",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/atmega/atmega/smores_common_library/inc/medfilt.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/atmega/atmega/smores_common_library/src/medfilt.c",
+		"/Users/gabriellemerritt/Documents/fixing_mistakes/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/smores_face.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/project_message_types.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/stm32_cc3000.c",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/wlan.c",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/handlers.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/python/control.py",
+		"/Users/gabriellemerritt/Documents/fall2014/CIS/cis542/lab2/src/test.cpp",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/inc/project_peripherals_smores.h",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_common/c/src/DC_Motor.c",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/smores_build/smores_reconfig/stm32f303xc/src/chao_working_main.cpp#",
+		"/Users/gabriellemerritt/Documents/s3.html",
+		"/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/hardware_testing/smores_stm_testing/stm32f303xc/src/main.cpp"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<open folders>,/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/",
+			"<open folders>,/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem/projects/smores_wifi_cc3000",
+			"<open folders>,/Users/gabriellemerritt/Documents/ModLab/smores/Embedded/ecosystem",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Tina",
+			"Christina",
+			"Taylor",
+			"christina",
+			"Christina",
+			"Tina",
+			"Chase",
+			"Dan",
+			"Nicky",
+			"Dan",
+			"Chase",
+			"Syd",
+			"Sydney",
+			"Don",
+			"Syd",
+			"Sydney",
+			"Syd",
+			"Don",
+			"Syd",
+			"Sydney",
+			"Mika",
+			"timer2",
+			"Jaz",
+			"Susan",
+			"Johnson",
+			"Jaz",
+			"B6",
+			"send encoder",
+			"cali_cmd",
+			"jpg",
+			"figure",
+			"{theta",
+			"{a1",
+			"{a2",
+			"{theta",
+			"- \\frac{\\pi}",
+			"{theta}",
+			"n",
+			"fucken",
+			"wifiSend",
+			"current_pos",
+			"thetadot_init",
+			"thetaddot_init",
+			"thetaddot_final",
+			"thetadot_final",
+			"theta_final",
+			"theta_init",
+			"^",
+			"Adriana",
+			"str",
+			"cmd",
+			"Sturm",
+			"Evie",
+			"Karli",
+			"Sturm",
+			"Evie",
+			"Karli",
+			"Evangeline",
+			"Sturm",
+			"Karli",
+			"Evie",
+			"Evangeline",
+			"Evie",
+			"Sturm",
+			"Karli",
+			"left_wheel_motor",
+			"right_wheel_motor",
+			"left_pan_tilt_motor",
+			"right_pan_tilt_motor",
+			"update_flag",
+			"sSimplLinkInformation ",
+			"tSLInformation",
+			"tWlanReadInteruptPin",
+			"update_flag",
+			"patchesAvailable",
+			"wlan_start",
+			"right_wheel_motor",
+			"left_wheel_motor",
+			"left_pan_tilt_motor",
+			"right_pan_tilt_motor",
+			"Ariel",
+			"].",
+			"timer_counter",
+			"traj_speed[",
+			"traj[",
+			"poly[",
+			"controller",
+			"PID",
+			"right_wheel_motor",
+			"left_pan_tilt_motor",
+			"right_pan_tilt_motor",
+			"Melissa",
+			"Chorong",
+			"Bomi",
+			"MAX_PACKET_SIZE",
+			"global_flag",
+			"PAN_TILT",
+			"left_wheel_control",
+			"path_left",
+			"motor_cmd",
+			"wheel_pid_controller",
+			"wheel_stateGoal",
+			"wheel_control",
+			"left_motor_cmd",
+			"motor_cmd",
+			"current_position_right",
+			"wheel_stateGoal",
+			"I2C",
+			"LEFT_FACE_I2C_ADDRESS",
+			"playTimebase",
+			"float ",
+			"Printinfo",
+			"flightState",
+			"theta[",
+			"irq",
+			"irq_poll",
+			"cc3000_connected",
+			"cc3000",
+			"is_connected",
+			"cc3000_async_callback",
+			"cc3000_connected",
+			"irq_poll",
+			"cc3000_connected",
+			"connect_to",
+			"setup",
+			"cc3000_connect_secure(",
+			"cc3000_connect_secure(ssid, key, secmode) ",
+			"scan_ssids"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"Tiffany",
+			"Kwon",
+			"Tiffany",
+			"Taeng",
+			"Stephen",
+			"Tiffany",
+			"Stephen",
+			"Taeng",
+			"Tiffany",
+			"Stephen",
+			"Tiffany",
+			"Stephen",
+			"Tiffany",
+			"Taeng",
+			"Tiffany",
+			"Hwang",
+			"Taeng",
+			"{\\theta",
+			"{a_1",
+			"{a_2",
+			"{\\theta",
+			"+ \\frac{\\pi}",
+			"{\\theta}",
+			"ctrl",
+			"thetad0",
+			"thetadd0",
+			"thetaddf",
+			"thetadf",
+			"thetaf",
+			"theta0",
+			"**",
+			"Tiffany",
+			"Hwang",
+			"Tiffany",
+			"Sunny",
+			"Hwang",
+			"Tiffany",
+			"Sunny",
+			"Tiffany",
+			"Hwang",
+			"Sunny",
+			"Tiffany",
+			"Hwang",
+			"Sunny",
+			"wheel_motor[0]",
+			"wheel_motor[1]",
+			"wheel_motor[2]",
+			"wheel_motor[3]",
+			"right",
+			"left",
+			"left_ptilt",
+			"right_ptilt",
+			"Sunny",
+			"]->",
+			"wheel_motor[1]",
+			"wheel_motor[2]",
+			"wheel_motor[3]",
+			"Sunny",
+			"Tiffany",
+			"tx_msg.",
+			"coef_theta[",
+			"len(self.layers)",
+			"self.layers.size",
+			"mpoint",
+			"self.weights",
+			"weights",
+			"numTrials",
+			"mBUS"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "homework2.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1121,
+								1121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"_vintageous_glue_until_normal_mode": true,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
+								"action": null,
+								"action_count": "",
+								"mode": "mode_insert",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"normal_insert_count": "1",
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 38
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 441.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4731,
+								4731
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							},
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/gabriellemerritt/Documents/spring2016/ai/hw/hw1/homework1.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"vintage":
+							{
+								"action": null,
+								"action_count": "",
+								"mode": "mode_normal",
+								"motion": null,
+								"motion_count": "",
+								"must_capture_register_name": false,
+								"partial_sequence": "",
+								"register": "\"",
+								"sequence": "",
+								"xpos": 0
+							}
+						},
+						"translation.x": 0.0,
+						"translation.y": 1840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Vintageous/Vintageous.sublime-build",
+	"project": "hw2.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"_vintageous_reset_during_init": true,
+		"vintage":
+		{
+			"_cmdline_cd": "/Users/gabriellemerritt/Documents/spring2016/ai/hw/hw2"
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://www.seas.upenn.edu/~cis521/Homework/homework1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Homework 1</title>
+        <link rel="stylesheet" type="text/css" href="./Homework 1_files/homework.css">
+        <link rel="stylesheet" type="text/css" href="./Homework 1_files/prism.css">
+        <script type="text/javascript" src="./Homework 1_files/prism.js"></script>
+        <script type="text/javascript" src="./Homework 1_files/MathJax.js"></script>
+        <script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+    <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+    <body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+        <div class="content language-markup">
+            <h1>CIS 521: Homework 1<span class="points" data-value="100"></span></h1>
+            <table class="dates">
+                <tbody><tr>
+                    <td>Release Date</td>
+                    <td>Thursday, January 21, 2016</td>
+                </tr>
+                <tr>
+                    <td>Due Date</td>
+                    <td>11:59 pm on Thursday, January 28, 2016</td>
+                </tr>
+            </tbody></table>
+            <section>
+                <h3>Instructions</h3>
+                <p>In this assignment, you will answer some conceptual questions about Python and write a collection of basic algorithms and data structures.</p>
+                <p>A skeleton file <code class=" language-markup">homework1.py</code> containing empty definitions for each question has been provided. Since portions of this assignment will be graded automatically, none of the names or function signatures in this file should be modified. However, you are free to introduce additional variables or functions if needed.</p>
+                <p>Unless explicitly stated otherwise, you may not import any of the standard Python modules, meaning your solutions should not include any lines of the form <code class=" language-python"><span class="token keyword">import</span> x</code> or <code class=" language-python"><span class="token keyword">from</span> x <span class="token keyword">import</span> y</code>. Accordingly, you may find it helpful to refresh yourself on Python's built-in <a href="https://docs.python.org/2/library/functions.html">functions</a> and <a href="https://docs.python.org/2/library/stdtypes.html">data types</a>.</p>
+                <p>You will find that in addition to a problem specification, each programming question also includes a pair of examples from the Python interpreter. These are meant to illustrate typical use cases, and should not be taken as comprehensive test suites.</p>
+                <p>You are strongly encouraged to follow the Python style guidelines set forth in <a href="http://legacy.python.org/dev/peps/pep-0008/">PEP 8</a>, which was written in part by the creator of Python. However, your code will not be graded for style.</p>
+                <p>Once you have completed the assignment, you should submit your file on Eniac using the following <code class=" language-markup">turnin</code> command, where the flags <code class=" language-markup">-c</code> and <code class=" language-markup">-p</code> stand for "course" and "project", respectively.</p>
+                <pre class=" language-markup"><code class=" language-markup">turnin -c cis521 -p hw1 homework1.py</code></pre>
+                <p>You may submit as many times as you would like before the deadline, but only the last submission will be saved. To view a detailed listing of the contents of your most recent submission, you can use the following command, where the flag <code class=" language-markup">-v</code> stands for "verbose".</p>
+                <pre class=" language-markup"><code class=" language-markup">turnin -c cis521 -p hw1 -v</code></pre>
+            </section>
+            <section class="numbered">
+                <h3>Python Concepts<span class="points" data-value="6"></span></h3>
+                <p>For each of the following questions, write your answers as triply-quoted strings using the indicated variables in the provided file.</p>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Explain what it means for Python to be both strongly and dynamically typed, and give a concrete example of each.</p>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="2"></span>You would like to create a dictionary that maps some 2-dimensional points to their associated names. As a first attempt, you write the following code:</p>
+                        <pre class=" language-python"><code class=" language-python">points_to_names <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">"home"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">"school"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token string">"market"</span><span class="token punctuation">}</span>
+</code></pre>
+                        <p>However, this results in a type error. Describe what the problem is, and propose a solution.</p>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Consider the following two functions, each of which concatenates a list of strings. </p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token keyword">def</span> <span class="token function">concatenate1</span><span class="token punctuation">(</span>strings<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    result <span class="token operator">=</span> <span class="token string">""</span>
+    <span class="token keyword">for</span> s <span class="token keyword">in</span> strings<span class="token punctuation">:</span>
+        result <span class="token operator">+=</span> s
+    <span class="token keyword">return</span> result
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token keyword">def</span> <span class="token function">concatenate2</span><span class="token punctuation">(</span>strings<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>strings<span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                        <p>One of these approaches is significantly faster than the other for large inputs. Which version is better, and what is the reason for the discrepancy?</p>
+                    </li>
+                </ol>
+            </section>
+            <section class="numbered">
+                <h3>Working with Lists<span class="points" data-value="15"></span></h3>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Consider the function <code class=" language-python">extract_and_apply<span class="token punctuation">(</span>l<span class="token punctuation">,</span> p<span class="token punctuation">,</span> f<span class="token punctuation">)</span></code> shown below, which extracts the elements of a list <code class=" language-python">l</code> satisfying a boolean predicate <code class=" language-python">p</code>, applies a function <code class=" language-python">f</code> to each such element, and returns the result.</p>
+                        <pre class=" language-python"><code class=" language-python"><span class="token keyword">def</span> <span class="token function">extract_and_apply</span><span class="token punctuation">(</span>l<span class="token punctuation">,</span> p<span class="token punctuation">,</span> f<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> x <span class="token keyword">in</span> l<span class="token punctuation">:</span>
+        <span class="token keyword">if</span> p<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            result<span class="token punctuation">.</span>append<span class="token punctuation">(</span>f<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> result
+</code></pre>
+                        <p>Rewrite <code class=" language-python">extract_and_apply<span class="token punctuation">(</span>l<span class="token punctuation">,</span> p<span class="token punctuation">,</span> f<span class="token punctuation">)</span></code> in one line using a list comprehension.</p>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Write a function <code class=" language-python">concatenate<span class="token punctuation">(</span>seqs<span class="token punctuation">)</span></code> that returns a list containing the concatenation of the elements of the input sequences. Your implementation should consist of a single list comprehension, and should not exceed one line.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> concatenate<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"abc"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Write a function <code class=" language-python">transpose<span class="token punctuation">(</span>matrix<span class="token punctuation">)</span></code> that returns the transpose of the input matrix, which is represented as a list of lists. Recall that the transpose of a matrix is obtained by swapping its rows with its columns. More concretely, the equality <code class=" language-python">matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> transpose<span class="token punctuation">(</span>matrix<span class="token punctuation">)</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span></code> should hold for all valid indices <code class=" language-python">i</code> and <code class=" language-python">j</code>. You may assume that the input matrix is well-formed, i.e., that each row is of equal length. You may further assume that the input matrix is non-empty. Your function should not modify the input.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> transpose<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> transpose<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                </ol>
+            </section>
+            <section class="numbered">
+                <h3>Sequence Slicing<span class="points" data-value="6"></span></h3>
+                <p>The functions in this section should be implemented using sequence slices. Recall that the slice parameters take on sensible default values when omitted. In some cases, it may be necessary to use the optional third parameter to specify a step size.</p>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Write a function <code class=" language-python">copy<span class="token punctuation">(</span>seq<span class="token punctuation">)</span></code> that returns a new sequence containing the same elements as the input sequence.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> copy<span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span>
+<span class="token string">'abc'</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> copy<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> y <span class="token operator">=</span> copy<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">print</span> x<span class="token punctuation">,</span> y<span class="token punctuation">;</span> x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token keyword">print</span> x<span class="token punctuation">,</span> y
+<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Write a function <code class=" language-python">all_but_last<span class="token punctuation">(</span>seq<span class="token punctuation">)</span></code> that returns a new sequence containing all but the last element of the input sequence. If the input sequence is empty, a new empty sequence of the same type should be returned.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> all_but_last<span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span>
+<span class="token string">'ab'</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> all_but_last<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> all_but_last<span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span>
+<span class="token string">''</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> all_but_last<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Write a function <code class=" language-python">every_other<span class="token punctuation">(</span>seq<span class="token punctuation">)</span></code> that returns a new sequence containing every other element of the input sequence, starting with the first. <span class="hint">This function can be written in one line using the optional third parameter of the slice notation.</span></p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> every_other<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> every_other<span class="token punctuation">(</span><span class="token string">"abcde"</span><span class="token punctuation">)</span>
+<span class="token string">'ace'</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> every_other<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> every_other<span class="token punctuation">(</span><span class="token string">"abcdef"</span><span class="token punctuation">)</span>
+<span class="token string">'ace'</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                </ol>
+            </section>
+            <section class="numbered">
+                <h3>Combinatorial Algorithms<span class="points" data-value="11"></span></h3>
+                <p>The functions in this section should be implemented as generators. You may generate the output in any order you find convenient, as long as the correct elements are produced. However, in some cases, you may find that the order of the example output hints at a possible implementation.</p>
+                <p>Although generators in Python can be used in a variety of ways, you will not need to use any of their more sophisticated features here. Simply keep in mind that where you might normally <code class=" language-python"><span class="token keyword">return</span></code> a list of elements, you should instead <code class=" language-python"><span class="token keyword">yield</span></code> the individual elements.</p>
+                <p>Since the contents of a generator cannot be viewed without employing some form of iteration, we wrap all function calls in this section's examples with the <code class=" language-python">list</code> function for convenience.</p>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="6"></span>The prefixes of a sequence include the empty sequence, the first element, the first two elements, etc., up to and including the full sequence itself. Similarly, the suffixes of a sequence include the empty sequence, the last element, the last two elements, etc., up to and including the full sequence itself. Write a pair of functions <code class=" language-python">prefixes<span class="token punctuation">(</span>seq<span class="token punctuation">)</span></code> and <code class=" language-python">suffixes<span class="token punctuation">(</span>seq<span class="token punctuation">)</span></code> that yield all prefixes and suffixes of the input sequence.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> list<span class="token punctuation">(</span>prefixes<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> list<span class="token punctuation">(</span>suffixes<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> list<span class="token punctuation">(</span>prefixes<span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'ab'</span><span class="token punctuation">,</span> <span class="token string">'abc'</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> list<span class="token punctuation">(</span>suffixes<span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'abc'</span><span class="token punctuation">,</span> <span class="token string">'bc'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Write a function <code class=" language-python">slices<span class="token punctuation">(</span>seq<span class="token punctuation">)</span></code> that yields all non-empty slices of the input sequence.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> list<span class="token punctuation">(</span>slices<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+ <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> list<span class="token punctuation">(</span>slices<span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'ab'</span><span class="token punctuation">,</span> <span class="token string">'abc'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">,</span> <span class="token string">'bc'</span><span class="token punctuation">,</span> <span class="token string">'c'</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                </ol>
+            </section>
+            <section class="numbered">
+                <h3>Text Processing<span class="points" data-value="20"></span></h3>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="5"></span>A common preprocessing step in many natural language processing tasks is text normalization, wherein words are converted to lowercase, extraneous whitespace is removed, etc. Write a function <code class=" language-python">normalize<span class="token punctuation">(</span>text<span class="token punctuation">)</span></code> that returns a normalized version of the input string, in which all words have been converted to lowercase and are separated by a single space. No leading or trailing whitespace should be present in the output.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> normalize<span class="token punctuation">(</span><span class="token string">"This is an example."</span><span class="token punctuation">)</span>
+<span class="token string">'this is an example.'</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> normalize<span class="token punctuation">(</span><span class="token string">"   EXTRA   SPACE   "</span><span class="token punctuation">)</span>
+<span class="token string">'extra space'</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Write a function <code class=" language-python">no_vowels<span class="token punctuation">(</span>text<span class="token punctuation">)</span></code> that removes all vowels from the input string and returns the result. For the purposes of this problem, the letter 'y' is not considered to be a vowel.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> no_vowels<span class="token punctuation">(</span><span class="token string">"This Is An Example."</span><span class="token punctuation">)</span>
+<span class="token string">'Ths s n xmpl.'</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> no_vowels<span class="token punctuation">(</span><span class="token string">"We love Python!"</span><span class="token punctuation">)</span>
+<span class="token string">'W lv Pythn!'</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Write a function <code class=" language-python">digits_to_words<span class="token punctuation">(</span>text<span class="token punctuation">)</span></code> that extracts all digits from the input string, spells them out as lowercase English words, and returns a new string in which they are each separated by a single space. If the input string contains no digits, then an empty string should be returned.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> digits_to_words<span class="token punctuation">(</span><span class="token string">"Zip Code: 19104"</span><span class="token punctuation">)</span>
+<span class="token string">'one nine one zero four'</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> digits_to_words<span class="token punctuation">(</span><span class="token string">"Pi is 3.1415..."</span><span class="token punctuation">)</span>
+<span class="token string">'three one four one five'</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Although there exist many naming conventions in computer programming, two of them are particularly widespread. In the first, words in a variable name are separated using underscores. In the second, words in a variable name are written in mixed case, and are strung together without a delimiter. By mixed case, we mean that the first word is written in lowercase, and that subsequent words have a capital first letter. Write a function <code class=" language-python">to_mixed_case<span class="token punctuation">(</span>name<span class="token punctuation">)</span></code> that converts a variable name from the former convention to the latter. Leading and trailing underscores should be ignored. If the variable name consists solely of underscores, then an empty string should be returned.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> to_mixed_case<span class="token punctuation">(</span><span class="token string">"to_mixed_case"</span><span class="token punctuation">)</span>
+<span class="token string">'toMixedCase'</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> to_mixed_case<span class="token punctuation">(</span><span class="token string">"__EXAMPLE__NAME__"</span><span class="token punctuation">)</span>
+<span class="token string">'exampleName'</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                </ol>
+            </section>
+            <section class="numbered">
+                <h3>Polynomials<span class="points" data-value="37"></span></h3>
+                <p>In this section, you will implement a simple <code class=" language-python">Polynomial</code> class supporting basic arithmetic, simplification, evaluation, and pretty-printing. An example demonstrating these capabilities is shown below.</p>
+                <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p<span class="token punctuation">,</span> q <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">print</span> p<span class="token punctuation">;</span> <span class="token keyword">print</span> q
+2x <span class="token operator">+</span> <span class="token number">1</span>
+2x <span class="token operator">-</span> <span class="token number">1</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> r <span class="token operator">=</span> <span class="token punctuation">(</span>p <span class="token operator">*</span> p<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>q <span class="token operator">*</span> q<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token punctuation">(</span>p <span class="token operator">*</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword">print</span> r
+4x<span class="token operator">^</span><span class="token number">2</span> <span class="token operator">+</span> 2x <span class="token operator">+</span> 2x <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">+</span> 4x<span class="token operator">^</span><span class="token number">2</span> <span class="token operator">-</span> 2x <span class="token operator">-</span> 2x <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">-</span> 4x<span class="token operator">^</span><span class="token number">2</span> <span class="token operator">+</span> 2x <span class="token operator">-</span> 2x <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> r<span class="token punctuation">.</span>simplify<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token keyword">print</span> r
+4x<span class="token operator">^</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> r<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">67</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">39</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">39</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">67</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="2"></span>In this problem, we will think of a polynomial as an immutable object, represented internally as a tuple of coefficient-power pairs. For instance, the polynomial <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" role="math" style="width: 2.874em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.593em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.636em 1002.48em 2.706em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-2"><span class="mn" id="MathJax-Span-3" style="font-family: STIXGeneral-Regular;">2</span><span class="mi" id="MathJax-Span-4" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span class="mo" id="MathJax-Span-5" style="font-family: STIXGeneral-Regular; padding-left: 0.228em;">+</span><span class="mn" id="MathJax-Span-6" style="font-family: STIXGeneral-Regular; padding-left: 0.228em;">1</span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.122em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.941em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-1">2x + 1</script> would be represented internally by the tuple <code class=" language-python"><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code>. Write an initialization method <code class=" language-python">__init__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> polynomial<span class="token punctuation">)</span></code> that converts the input sequence <code class=" language-python">polynomial</code> of coefficient-power pairs into a tuple and saves it for future use. Also write a corresponding method <code class=" language-python">get_polynomial<span class="token punctuation">(</span>self<span class="token punctuation">)</span></code> that returns this internal representation.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="4"></span>Write a <code class=" language-python">__neg__<span class="token punctuation">(</span>self<span class="token punctuation">)</span></code> method that returns a new polynomial equal to the negation of <code class=" language-python">self</code>. This method will be used by Python for unary negation.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> <span class="token operator">-</span>p<span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> <span class="token operator">-</span><span class="token punctuation">(</span><span class="token operator">-</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="3"></span>Write an <code class=" language-python">__add__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span></code> method that returns a new polynomial equal to the sum of <code class=" language-python">self</code> and <code class=" language-python">other</code>. This method will be used by Python for addition. No simplification should be performed on the result.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> p <span class="token operator">+</span> p<span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> r <span class="token operator">=</span> p <span class="token operator">+</span> q<span class="token punctuation">;</span> r<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="3"></span>Write a <code class=" language-python">__sub__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span></code> method that returns a new polynomial equal to the difference between <code class=" language-python">self</code> and <code class=" language-python">other</code>. This method will be used by Python for subtraction. No simplification should be performed on the result.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> p <span class="token operator">-</span> p<span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> r <span class="token operator">=</span> p <span class="token operator">-</span> q<span class="token punctuation">;</span> r<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="5"></span>Write a <code class=" language-python">__mul__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> other<span class="token punctuation">)</span></code> method that returns a new polynomial equal to the product of <code class=" language-python">self</code> and <code class=" language-python">other</code>. This method will be used by Python for multiplication. No simplification should be performed on the result. Your result does not need to match the examples below exactly, as long as the same terms are present in some order.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> p <span class="token operator">*</span> p<span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> r <span class="token operator">=</span> p <span class="token operator">*</span> q<span class="token punctuation">;</span> r<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="3"></span>Write a <code class=" language-python">__call__<span class="token punctuation">(</span>self<span class="token punctuation">,</span> x<span class="token punctuation">)</span></code> method that returns the result of evaluating the current polynomial at the point <code class=" language-python">x</code>. This method will be used by Python when a polynomial is called as a function. <span class="hint">This method can be written in one line using Python's exponentiation operator, <code class=" language-python"><span class="token operator">**</span></code>, and the built-in <code class=" language-python">sum</code> function.</span></p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>p<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> <span class="token operator">-</span><span class="token punctuation">(</span>p <span class="token operator">*</span> p<span class="token punctuation">)</span> <span class="token operator">+</span> p
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>q<span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token keyword">for</span> x <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">42</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">72</span><span class="token punctuation">]</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="8"></span>Write a <code class=" language-python">simplify<span class="token punctuation">(</span>self<span class="token punctuation">)</span></code> method that replaces the polynomial's internal representation with an equivalent, simplified representation. Unlike the previous methods, <code class=" language-python">simplify<span class="token punctuation">(</span>self<span class="token punctuation">)</span></code> does not return a new polynomial, but rather acts in place. However, because the fundamental character of the polynomial is not changing, we do not consider this to violate the notion that polynomials are immutable.</p>
+                        <p>The simplification process should begin by combining terms with a common power. Then, terms with a coefficient of zero should be removed, and the remaining terms should be sorted in decreasing order based on their power. In the event that all terms have a coefficient of zero after the first step, the polynomial should be simplified to the single term <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;&amp;#x22C5;&lt;/mo&gt;&lt;msup&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-7" role="math" style="width: 2.368em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.142em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.467em 1002.14em 2.649em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-8"><span class="mn" id="MathJax-Span-9" style="font-family: STIXGeneral-Regular;">0</span><span class="mo" id="MathJax-Span-10" style="font-family: STIXGeneral-Regular; padding-left: 0.228em;">⋅</span><span class="msubsup" id="MathJax-Span-11" style="padding-left: 0.228em;"><span style="display: inline-block; position: relative; width: 0.904em; height: 0px;"><span style="position: absolute; clip: rect(3.381em 1000.45em 4.169em -999.997em); top: -3.995em; left: 0.003em;"><span class="mi" id="MathJax-Span-12" style="font-family: STIXGeneral-Italic;">x<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.003em;"></span></span><span style="display: inline-block; width: 0px; height: 4.001em;"></span></span><span style="position: absolute; top: -4.333em; left: 0.51em;"><span class="mn" id="MathJax-Span-13" style="font-size: 70.7%; font-family: STIXGeneral-Regular;">0</span><span style="display: inline-block; width: 0px; height: 4.001em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 1.066em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn><mo>⋅</mo><msup><mi>x</mi><mn>0</mn></msup></math></span></span><script type="math/tex" id="MathJax-Element-2">0 \cdot x^0</script>, i.e. <code class=" language-python"><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span></code>.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> <span class="token operator">-</span>p <span class="token operator">+</span> <span class="token punctuation">(</span>p <span class="token operator">*</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q<span class="token punctuation">.</span>simplify<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> p <span class="token operator">-</span> p<span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q<span class="token punctuation">.</span>simplify<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> q<span class="token punctuation">.</span>get_polynomial<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">)</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="9"></span>Write a <code class=" language-python">__str__<span class="token punctuation">(</span>self<span class="token punctuation">)</span></code> method that returns a human-readable string representing the polynomial. This method will be used by Python when the <code class=" language-python">str</code> function is called on a polynomial, or when a polynomial is printed.</p>
+                        <p>In general, your function should render polynomials as a sequence of signs and terms each separated by a single space, i.e. <code class=" language-python"><span class="token string">"sign1 term1 sign2 term2 ... signN termN"</span></code>, where signs can be <code class=" language-python"><span class="token string">"+"</span></code> or <code class=" language-python"><span class="token string">"-"</span></code>, and terms have the form <code class=" language-python"><span class="token string">"ax^b"</span></code> for coefficient <code class=" language-python">a</code> and power <code class=" language-python">b</code>. However, in adherence with conventional mathematical notation, there are a few exceptional cases that require special treatment:</p>
+                        <ul>
+                            <li>
+                                <p>The first sign should not be separated from the first term by a space, and should be left blank if the first term has a positive coefficient.</p>
+                            </li>
+                            <li>
+                                <p>The variable and power portions of a term should be omitted if the power is <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-14" role="math" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.636em 1000.57em 2.649em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-15"><span class="mn" id="MathJax-Span-16" style="font-family: STIXGeneral-Regular;">0</span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-3">0</script>, leaving only the coefficient.</p>
+                            </li>
+                            <li>
+                                <p>The power portion of a term should be omitted if the power is <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-17" role="math" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.636em 1000.45em 2.649em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-18"><span class="mn" id="MathJax-Span-19" style="font-family: STIXGeneral-Regular;">1</span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-4">1</script>.</p>
+                            </li>
+                            <li>
+                                <p>Coefficients with magnitude <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-20" role="math" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.636em 1000.57em 2.649em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-21"><span class="mn" id="MathJax-Span-22" style="font-family: STIXGeneral-Regular;">0</span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-5">0</script> should always have a positive sign.</p>
+                            </li>
+                            <li>
+                                <p>Coefficients with magnitude <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-23" role="math" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.636em 1000.45em 2.649em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-24"><span class="mn" id="MathJax-Span-25" style="font-family: STIXGeneral-Regular;">1</span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn></math></span></span><script type="math/tex" id="MathJax-Element-6">1</script> should be omitted, unless the power is <span class="MathJax_Preview" style="color: inherit;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="position: relative;"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-26" role="math" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.566em; height: 0px; font-size: 111%;"><span style="position: absolute; clip: rect(1.636em 1000.57em 2.649em -999.997em); top: -2.475em; left: 0.003em;"><span class="mrow" id="MathJax-Span-27"><span class="mn" id="MathJax-Span-28" style="font-family: STIXGeneral-Regular;">0</span></span><span style="display: inline-block; width: 0px; height: 2.48em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.059em; border-left-width: 0px; border-left-style: solid; width: 0px; height: 0.878em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-7">0</script>.</p>
+                            </li>
+                        </ul>
+                        <p>You may assume that all polynomials have integer coefficients and non-negative integer powers.</p>
+                        <table class="codeGroup">
+                            <tbody><tr>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> qs <span class="token operator">=</span> <span class="token punctuation">(</span>p<span class="token punctuation">,</span> p <span class="token operator">+</span> p<span class="token punctuation">,</span> <span class="token operator">-</span>p<span class="token punctuation">,</span> <span class="token operator">-</span>p <span class="token operator">-</span> p<span class="token punctuation">,</span> p <span class="token operator">*</span> p<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">for</span> q <span class="token keyword">in</span> qs<span class="token punctuation">:</span> q<span class="token punctuation">.</span>simplify<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> str<span class="token punctuation">(</span>q<span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token string">'x + 1'</span>
+<span class="token string">'2x + 2'</span>
+<span class="token string">'-x - 1'</span>
+<span class="token string">'-2x - 2'</span>
+<span class="token string">'x^2 + 2x + 1'</span>
+</code></pre>
+                                </td>
+                                <td>
+                                    <pre class=" language-python"><code class=" language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> p <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> str<span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token punctuation">;</span> str<span class="token punctuation">(</span>p <span class="token operator">*</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span> str<span class="token punctuation">(</span><span class="token operator">-</span>p <span class="token operator">*</span> p<span class="token punctuation">)</span>
+<span class="token string">'0x + 2x^3'</span>
+<span class="token string">'0x^2 + 0x^4 + 0x^4 + 4x^6'</span>
+<span class="token string">'0x^2 + 0x^4 + 0x^4 - 4x^6'</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> q <span class="token operator">=</span> Polynomial<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> str<span class="token punctuation">(</span>q<span class="token punctuation">)</span><span class="token punctuation">;</span> str<span class="token punctuation">(</span>q <span class="token operator">*</span> q<span class="token punctuation">)</span><span class="token punctuation">;</span> str<span class="token punctuation">(</span><span class="token operator">-</span>q <span class="token operator">*</span> q<span class="token punctuation">)</span>
+<span class="token string">'x + 2x^3'</span>
+<span class="token string">'x^2 + 2x^4 + 2x^4 + 4x^6'</span>
+<span class="token string">'-x^2 - 2x^4 - 2x^4 - 4x^6'</span>
+</code></pre>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </li></ol>
+            </section>
+            <section class="numbered">
+                <h3>Feedback<span class="points" data-value="5"></span></h3>
+                <ol>
+                    <li>
+                        <p><span class="points" data-value="1"></span>Approximately how long did you spend on this assignment?</p>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Which aspects of this assignment did you find most challenging? Were there any significant stumbling blocks?</p>
+                    </li>
+                    <li>
+                        <p><span class="points" data-value="2"></span>Which aspects of this assignment did you like? Is there anything you would have changed?</p>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    
+
+<div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: STIXSizeOneSym, sans-serif;"></div></div></body></html>
