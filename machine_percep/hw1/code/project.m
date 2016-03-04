@@ -8,17 +8,24 @@ function [ p2d ] = project( p3d, f, pos )
 % - pos : double, camera center position
 % Output:
 % - p2d: n by 2, each row represents vertex image position, in pixel unit
-
+global p_x 
+global p_y
 point_num = size(p3d,1);
 X = p3d(:,1); 
 Y = p3d(:,2);
 Z = p3d(:,3);
-p_x = 1080/2; 
-p_y = 1920/2;
-K = [f 0 p_x; 0 f p_y; 0 0 1]*[eye(3) zeros(3,1)];
-p2d = K*[X Y Z ones(point_num,1)];
-p2d = p2d./pos; 
+%% This seems wrong but everything is shifted to the right if i put px as in optical x center 
+% and py as the optical y center 
+K =[f 0 p_y; 0  f p_x; 0 0 1]; 
 
-
+p2d = K*[X Y Z].';
+% 
+% x = (f .* (X./ pos -Z)) + p_x; 
+% y = (f .* (Y./ pos -Z)) + p_y; 
+% z = Z - pos; 
+% p2d = round([x y]); 
+p2d(1,:)  = p2d(1,:)./(Z- pos)'; 
+p2d(2,:) = p2d(2,:)./(Z - pos)';
+p2d= round(p2d(1:2,:))'; 
 end
 

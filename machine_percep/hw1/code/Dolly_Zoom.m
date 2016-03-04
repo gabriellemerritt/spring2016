@@ -1,4 +1,4 @@
-function [img] = Dolly_Zoom( f, pos )
+function [img,p2d] = Dolly_Zoom( f, pos )
 % render synthetic image using given camera focal length and camera
 % position
 %
@@ -19,8 +19,8 @@ function [img] = Dolly_Zoom( f, pos )
     p2d = project(points_C, f, pos);
     color = color_3;
     img = render(img, p2d, polygons_C, color);
-    
-    % object 1
+%     img = [];
+%     % object 1
     p2d = project(points_A, f, pos);
     color = color_1;
     img = render(img, p2d, polygons_A, color);
