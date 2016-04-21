@@ -4,6 +4,218 @@
 		"selected_items":
 		[
 			[
+				"cur",
+				"current_p	statement"
+			],
+			[
+				"ge",
+				"get_board"
+			],
+			[
+				"chil",
+				"child_board	forstmt"
+			],
+			[
+				"child",
+				"child_v"
+			],
+			[
+				"move",
+				"move_list"
+			],
+			[
+				"Pr",
+				"PriorityQueue	class"
+			],
+			[
+				"al",
+				"alpha	param"
+			],
+			[
+				"co",
+				"copy	function"
+			],
+			[
+				"ve",
+				"vertical	param"
+			],
+			[
+				"in",
+				"inf"
+			],
+			[
+				"op",
+				"opponent	param"
+			],
+			[
+				"alph",
+				"alpha_beta_search"
+			],
+			[
+				"get",
+				"get_board	function"
+			],
+			[
+				"is_",
+				"is_legal_move"
+			],
+			[
+				"is",
+				"is_legal_move"
+			],
+			[
+				"node",
+				"node_list	param"
+			],
+			[
+				"Domi",
+				"DominoesGame	class"
+			],
+			[
+				"fro",
+				"frozenset	class"
+			],
+			[
+				"cre",
+				"create_dominoes_game	function"
+			],
+			[
+				"disk",
+				"disk_successors	function"
+			],
+			[
+				"cu",
+				"current_board	statement"
+			],
+			[
+				"solve",
+				"solved_state	function"
+			],
+			[
+				"goal",
+				"goal_board	param"
+			],
+			[
+				"pri",
+				"PriorityQueue	class"
+			],
+			[
+				"board",
+				"board_list	statement"
+			],
+			[
+				"boar",
+				"board_list	statement"
+			],
+			[
+				"valid_dir",
+				"valid_dir_list	statement"
+			],
+			[
+				"new",
+				"new_g	statement"
+			],
+			[
+				"dist",
+				"dist_metric	function"
+			],
+			[
+				"valid",
+				"valid_nodes	param"
+			],
+			[
+				"curre",
+				"current_node	statement"
+			],
+			[
+				"ca",
+				"calculate_distance	function"
+			],
+			[
+				"he",
+				"heuristic	function"
+			],
+			[
+				"puzz",
+				"puzzle	forstmt"
+			],
+			[
+				"puz",
+				"puzzle	forstmt"
+			],
+			[
+				"inf",
+				"Infinity	statement"
+			],
+			[
+				"parent",
+				"parent_nodes	statement"
+			],
+			[
+				"to",
+				"to_explore	statement"
+			],
+			[
+				"pr",
+				"PriorityQueue	class"
+			],
+			[
+				"vali",
+				"valid_children	statement"
+			],
+			[
+				"em",
+				"empty_r	statement"
+			],
+			[
+				"creat",
+				"create_tile_puzzle	function"
+			],
+			[
+				"val",
+				"valid_children	statement"
+			],
+			[
+				"perfo",
+				"perform_move	function"
+			],
+			[
+				"per",
+				"perform_move"
+			],
+			[
+				"num",
+				"num_moves	param"
+			],
+			[
+				"emp",
+				"empty_c	statement"
+			],
+			[
+				"Inde",
+				"IndexError	class"
+			],
+			[
+				"swa",
+				"swap_places"
+			],
+			[
+				"epm",
+				"empty_r"
+			],
+			[
+				"dir",
+				"direction	param"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"Tile",
+				"TilePuzzle	class"
+			],
+			[
 				"my_",
 				"my_eeprom_array"
 			],
@@ -50,10 +262,6 @@
 			[
 				"right",
 				"rightDOF"
-			],
-			[
-				"curre",
-				"_current_pos"
 			],
 			[
 				"fac",
@@ -306,237 +514,21 @@
 			[
 				"end",
 				"endTime_left"
-			],
-			[
-				"time",
-				"timer_counter_tilt"
-			],
-			[
-				"timer",
-				"timer_counter_pan"
-			],
-			[
-				"tim",
-				"timer_counter_left"
-			],
-			[
-				"startTime",
-				"startTime_left"
-			],
-			[
-				"dur",
-				"duration_tilt"
-			],
-			[
-				"path",
-				"path_tilt"
-			],
-			[
-				"curr",
-				"current_velocity"
-			],
-			[
-				"current_pos",
-				"current_position"
-			],
-			[
-				"wheel_curr",
-				"pan_wheel_currentState"
-			],
-			[
-				"right_wh",
-				"right_wheel_currentState"
-			],
-			[
-				"ti",
-				"tilt_wheel_currentState"
-			],
-			[
-				"left_wheel_c",
-				"left_wheel_currentState"
-			],
-			[
-				"current_vel",
-				"current_velocity_tilt"
-			],
-			[
-				"current_ve",
-				"current_velocity_pan"
-			],
-			[
-				"cure",
-				"current_velocity"
-			],
-			[
-				"current_position",
-				"current_position_tilt"
-			],
-			[
-				"trajectory_spe",
-				"trajectory_speed_pan"
-			],
-			[
-				"trajectory_speed",
-				"trajectory_speed_right"
-			],
-			[
-				"tr",
-				"trajectory_speed_left"
-			],
-			[
-				"p_speed_",
-				"p_speed_pan"
-			],
-			[
-				"p_sp",
-				"p_speed_pan"
-			],
-			[
-				"p_",
-				"p_speed_left"
-			],
-			[
-				"wh",
-				"wheel_control_pan_tilt"
-			],
-			[
-				"Whe",
-				"Wheel_Controller_Pan_Tilt"
-			],
-			[
-				"right_whe",
-				"right_wheel_control"
-			],
-			[
-				"right_whee",
-				"right_wheel_control"
-			],
-			[
-				"whe",
-				"wheel_pid_controller_tilt"
-			],
-			[
-				"tilt_",
-				"tilt_wheel_stateGoal"
-			],
-			[
-				"msgContr",
-				"msgControlUpdateHandler"
-			],
-			[
-				"msgCon",
-				"msgControlSendHandler"
-			],
-			[
-				"cu",
-				"currentstate_struct"
-			],
-			[
-				"dat",
-				"dataManager"
-			],
-			[
-				"uint",
-				"uint16_t"
-			],
-			[
-				"Da",
-				"DATA_MANAGER_t"
-			],
-			[
-				"magn",
-				"magnet_struct"
-			],
-			[
-				"MsgTor",
-				"MsgTorqueType"
-			],
-			[
-				"coeff",
-				"coeff_2"
-			],
-			[
-				"traje",
-				"trajectory_veltx_struct"
-			],
-			[
-				"MsgTraj",
-				"MsgTrajectoryVelocity"
-			],
-			[
-				"MsgTra",
-				"MsgTrajectoryVelocityType"
-			],
-			[
-				"tra",
-				"trajectory_veltx_struct"
-			],
-			[
-				"trajectory",
-				"trajectory_postx_struct"
-			],
-			[
-				"coe",
-				"coeff_1"
-			],
-			[
-				"MsgTr",
-				"MsgTrajectoryVelocityTXType"
-			],
-			[
-				"MsgControl",
-				"MsgControlType"
-			],
-			[
-				"MsgModu",
-				"MsgModuleType"
-			],
-			[
-				"state",
-				"state"
-			],
-			[
-				"IHM_INPUT",
-				"IHM_INPUT_EVENT_TRAJ"
-			],
-			[
-				"devi",
-				"deviceManager"
-			],
-			[
-				"cc3000_",
-				"cc3000_is_connected"
-			],
-			[
-				"wlan",
-				"wlan_ioctl_set_scan_params"
-			],
-			[
-				"cc3000_connect",
-				"cc3000_connect_secure"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/Users/gabriellemerritt/Documents/smores_independent_Study/Embedded/atmega/atmega/project/smores_coil_communication_atmega168a/atmega168a/src/main.c",
-			"settings":
-			{
-				"buffer_size": 1610,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "homework3.py",
 			"settings":
 			{
-				"buffer_size": 2837,
-				"line_ending": "Windows"
+				"buffer_size": 16569,
+				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -552,6 +544,22 @@
 			],
 			[
 				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
 				""
 			]
 		]
@@ -605,6 +613,11 @@
 	},
 	"file_history":
 	[
+		"/Users/gabriellemerritt/Documents/s1.html",
+		"/Users/gabriellemerritt/Documents/s2.html",
+		"/Users/gabriellemerritt/Documents/spring2016/ai/hw/hw2/homework2.py",
+		"/Users/gabriellemerritt/Documents/spring2016/ai/hw/hw3/test.py",
+		"/Users/gabriellemerritt/Documents/smores_independent_Study/Embedded/atmega/atmega/project/smores_coil_communication_atmega168a/atmega168a/src/main.c",
 		"/Users/gabriellemerritt/Documents/spring2016/machine_percep/hw1/gmerritt_hw1.tex",
 		"/Users/gabriellemerritt/Documents/smores_independent_Study/Embedded/atmega/atmega/smores_common_library/inc/drive_coil.h",
 		"/Users/gabriellemerritt/Documents/smores_independent_Study/Embedded/atmega/atmega/smores_common_library/src/drive_coil.c",
@@ -666,7 +679,7 @@
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -685,6 +698,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"'Nessa",
+			"Denny",
+			"Vanessa",
+			"Cavanaugh",
+			"Denny",
+			"print",
 			"Tina",
 			"Christina",
 			"Taylor",
@@ -806,13 +825,7 @@
 			"is_connected",
 			"cc3000_async_callback",
 			"cc3000_connected",
-			"irq_poll",
-			"cc3000_connected",
-			"connect_to",
-			"setup",
-			"cc3000_connect_secure(",
-			"cc3000_connect_secure(ssid, key, secmode) ",
-			"scan_ssids"
+			"irq_poll"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -820,6 +833,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Sana",
+			"Stephen",
+			"Sana",
+			"",
+			"Stephen",
 			"Tiffany",
 			"Kwon",
 			"Tiffany",
@@ -898,94 +916,62 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/gabriellemerritt/Documents/smores_independent_Study/Embedded/atmega/atmega/project/smores_coil_communication_atmega168a/atmega168a/src/main.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1610,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1610,
-								1610
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C Improved/C Improved.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"vintage":
-							{
-								"action": null,
-								"action_count": "",
-								"mode": "mode_normal",
-								"motion": null,
-								"motion_count": "",
-								"must_capture_register_name": false,
-								"partial_sequence": "",
-								"register": "\"",
-								"sequence": "",
-								"xpos": 0
-							}
-						},
-						"translation.x": -0.0,
-						"translation.y": 1137.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "homework3.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2837,
+						"buffer_size": 16569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5802,
+								5802
 							]
 						],
 						"settings":
 						{
+							"highlight_line": false,
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"vintage":
 							{
+								"_vintageous_glue_until_normal_mode": false,
+								"_vintageous_non_interactive": false,
+								"_vintageous_processing_notation": false,
 								"action": null,
 								"action_count": "",
 								"mode": "mode_normal",
 								"motion": null,
 								"motion_count": "",
 								"must_capture_register_name": false,
+								"normal_insert_count": "1",
 								"partial_sequence": "",
 								"register": "\"",
 								"sequence": "",
-								"xpos": 0
+								"xpos": 54
 							}
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 9507.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -1006,11 +992,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.474471028645,
 			1.0
 		],
 		"rows":
@@ -1022,17 +1015,17 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 124.0
+		"height": 87.0
 	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/LaTeXing/LaTeX.sublime-build",
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
 	"project": "hw3.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1065,8 +1058,12 @@
 	"selected_group": 0,
 	"settings":
 	{
+		"_vintageous_last_char_search_command": "vi_t",
+		"_vintageous_last_character_search": "u",
+		"_vintageous_reset_during_init": true,
 		"vintage":
 		{
+			"_cmdline_cd": "/Users/gabriellemerritt/Documents/spring2016/ai/hw/hw3"
 		}
 	},
 	"show_minimap": false,

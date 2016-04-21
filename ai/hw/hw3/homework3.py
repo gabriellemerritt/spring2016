@@ -163,7 +163,7 @@ class TilePuzzle(object):
             current_p = current_node[3].copy()
             if(current_p.is_solved()):
                 return current_node[2]
-            visited += [copy.deepcopy(current_p.get_board())]
+            visited.append(copy.deepcopy(current_p.get_board()))
             for move, puzzle in current_p.successors():
                 if(puzzle.get_board() not in visited):
                     new_g = current_node[
@@ -185,10 +185,11 @@ def dist_metric(current, goal):
     return math.sqrt(result)
 
 
-def get_successors(node, valid_nodes):
+def get_successors(node, max_row, max_col, scene):
     r = node[0]
     c = node[1]
-    result = [n for n in valid_nodes if abs(r-n[0])<=1 and abs(c-n[1])<= 1 and node != n]
+    search_space = [(r,c+1),(r,c-1), (r+1, c), (r-1, c), (r-1,c+1), (r+1, c+1), (r+1, c-1), (r-1,c-1)]
+    result = [(n[0],n[1]) for n in search_space if n[0] >= 0 and n[0] < max_row and n[1] >= 0 and n[1] < max_col and not scene[n[0]][n[1]]]
     return result
 
 
@@ -213,6 +214,7 @@ def find_path(start, goal, scene):
     node_list = free_nodes(scene)
     to_explore = PriorityQueue()
     non_visited = init_nodes(node_list)
+    maxs = (len(scene), len(scene[0]))
     visited = set()
     path = [start]
     g_n = 0
@@ -222,13 +224,13 @@ def find_path(start, goal, scene):
     while(not to_explore.empty()):
         current_node = to_explore.get()
         if(current_node[-1] == goal):
-            print "Visited Nodes:", numpy.size(visited)
+            print "Visited Nodes:", len(visited)
             print "Path Length: ", numpy.size(current_node[2])
             return current_node[2]
         # visited[current_node[3]] = current_node[3]
         visited.add(current_node[3])
         non_visited.pop(current_node[3], None)
-        for node in get_successors(current_node[-1], non_visited):
+        for node in get_successors(current_node[-1], maxs[0], maxs[1], scene):
             if (node in visited):
                 continue
             new_g = current_node[1] + dist_metric(current_node[-1], node)
@@ -240,6 +242,7 @@ def find_path(start, goal, scene):
         #     print visited
         #     break
         # i+= 1
+
     return None
 
 
@@ -315,7 +318,7 @@ def disk_dist(goal_board, current_board, length):
     dist = 0
     for pos, num in enumerate(goal_board):
         d1 = [idx for idx, value in enumerate(
-            current_board) if value == num and num]
+            current_board) if value == num and num ]
         if(d1):
             dist += abs(d1[0] - pos)
     return dist
@@ -324,7 +327,7 @@ def disk_dist(goal_board, current_board, length):
 def a_star_disks(board, length, n):
     goal = solved_state(length, n)
     to_explore = PriorityQueue()
-    visited = []
+    visited = set()
     g_n = 0
     f_n = 0
     path = []
@@ -333,9 +336,9 @@ def a_star_disks(board, length, n):
         current_node = to_explore.get()
         if(current_node[3] == goal):
             return current_node[2]
-        visited += [copy.deepcopy(current_node[3])]
+        visited.add(tuple(current_node[3]))
         for move, brd in disk_successors(current_node[3], length):
-            if brd not in visited:
+            if tuple(brd) not in visited:
                 g_new = current_node[1] + \
                     disk_dist(current_node[3], brd, length)
                 f_new = g_new + disk_dist(goal, brd, length)
@@ -426,7 +429,6 @@ class DominoesGame(object):
         # print curr, opp
         # result = curr - opp
         result = len(list(self.legal_moves(vertical))) - len(list(self.legal_moves(not vertical)))
-        print result
         return result
 
     def get_random_move(self, vertical):
@@ -434,43 +436,11 @@ class DominoesGame(object):
         rand_move = random.choice(move_list)
         return rand_move
     # Required
-    # def mini_max(self, board, vertical, alpha, beta, max_player, limit, d):
-    #     m = None
-    #     values = PriorityQueue()
-    #     print "Alpha Beta:" ,alpha, beta
-    #     if (limit == 0 or self.game_over(vertical)):
-    #         return (None, self.evalution(self, board, vertical), d)
-    #     elif max_player:
-    #         print "Max Player"
-    #         v = alpha
-    #         for move, child_board in board.successors(vertical):
-    #             print "Max moves:", move
-    #             c_m, child_v, d = self.mini_max(child_board, vertical, v, beta, False, limit - 1, d+1)
-    #             # v = max(v, child_v)
-    #             values.put((move,child_v))
-    #             if(child_v > v):
-    #                 v = child_v
-    #             if (v >= beta):
-    #                 print "Pruning Max"
-    #                 break  
-    #     else:
-    #         v = beta
-    #         print "Min Player"
-    #         for move, child_board in board.successors(vertical):
-    #             c_m, child_v, d = self.mini_max(child_board, vertical, alpha, v, True, limit - 1, d+1)
-    #             # v = min(v, child_v)
-    #             if(child_v < v):
-    #                 v = child_v
-    #                 m = move
-    #             if (v <= alpha):
-    #                 break
-    #     return m, v, d
 
     def max_value(self, min_board, vertical, alpha, beta, limit, d):
         if(limit <= 0):
             return None, self.evalution(self, min_board, vertical), d+1
         elif(self.game_over(vertical)):
-            "Game is over Max"
             return None, self.evalution(self, min_board, vertical), d
         v = -float("inf")
         for move, child_board in self.successors(vertical):
@@ -478,7 +448,7 @@ class DominoesGame(object):
             if(child_v > v):
                 v = copy.deepcopy(child_v)
                 m = move
-            if (v > beta):
+            if (v >= beta):
                 return move, v, d
             alpha = max(alpha, v)
 
@@ -488,7 +458,6 @@ class DominoesGame(object):
         if(limit == 0):
             return None, self.evalution(max_board, self, not vertical),d+1
         if(self.game_over(vertical)):
-            print "Game over min"
             return None, self.evalution(max_board, self, not vertical),d
         v = float("inf")
         for move, child_board in self.successors(vertical):
@@ -496,20 +465,18 @@ class DominoesGame(object):
             if(child_v < v):
                 v = copy.deepcopy(child_v)
                 m = move
-            if (v <  alpha):
+            if (v <=  alpha):
                 return move, v, d
             beta = min(beta, v)
 
         return m,v,d 
 
     def alpha_beta_search(self, vertical, explored, limit):
-        move = "Wrong"
         move, v, l  = self.max_value(self,vertical, -float("inf"), +float("inf"), limit, 0)
         # move, v, l = self.mini_max(self.copy(), vertical, -float("inf"), float("inf"), True, limit, 0)
         return (move, v, l)
 
     def get_best_move(self, vertical, limit):
-        print self.get_board()
         return self.alpha_beta_search(vertical,0, limit)
 
 ############################################################

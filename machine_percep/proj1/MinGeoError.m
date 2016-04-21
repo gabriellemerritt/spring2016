@@ -21,12 +21,13 @@ function [ ks_opt, K_opt, Rs_opt, ts_opt ] = MinGeoError( x, X, ks_init, K_init,
 
 
 params0 = encodeParams(ks_init, K_init, Rs_init, ts_init);
-opts = optimoptions(@lsqnonlin, 'Algorithm', 'levenberg-marquardt', 'TolX', 1e-64, 'TolFun', 1e-64, 'MaxFunEvals', 1e64, 'MaxIter', 1e64, 'Display', 'iter');
+opts = optimoptions(@lsqnonlin, 'Algorithm', 'levenberg-marquardt', 'TolX', 1e-64, 'TolFun', 1e-64, 'MaxFunEvals', 1e64, 'MaxIter',1e3, 'Display', 'iter');
 
 %% Your code goes here. You can use any functions defined below.
+solved_params = lsqnonlin(@(params)GeoError_cb(params,x,X), params0,[],[],opts); 
 
-
-
+[ ks_opt, K_opt, Rs_opt, ts_opt] = decodeParams(solved_params,size(x, 3)); 
+return 
 end
 
 function [params_encoded] = encodeParams(ks, K, R, t)

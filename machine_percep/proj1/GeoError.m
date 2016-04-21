@@ -16,8 +16,21 @@ function [error, f] = GeoError(x, X, ks, K, Rs, ts)
 %   ks: radial distortion parameters. 2 x 1 matrix, where ks(1) = k_1 and
 %   ks(2) = k_2.
 %
-
+eus = @(XI,XJ) (bsxfun(@minus,XI,XJ).^2);
+error = []; 
+f = []; 
 %% Your code goes here
+[~,~,N] = size(Rs); 
+for n = 1:N
+Rt = [Rs(:,1:2,n) ts(:,:,n)];
+Rt = Rt/Rt(3,3);
+uv_reproj =  K*Rt* [X';ones(1,size(X,1))];
+uv = uv_reproj(1:2,:);  
+x_img = x(:,:,n);
+x_img = x_img.';
+error = [error;bsxfun(eus,x_img(:) ,uv(:))]; 
+f = [f;(x_img - uv).']; 
+end
 
 
 

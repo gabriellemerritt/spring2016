@@ -1,0 +1,50 @@
+
+
+    def infer_ac3(self):
+        # while (not self.ARCS.empty()):
+        while (self.ARCS):
+            cell_pair = self.ARCS.pop()
+            # cell_pair = self.ARCS.get()
+            if(self.board[cell_pair[0]] == self.board[cell_pair[1]]):
+                return False 
+            if(self.remove_inconsistent_values(cell_pair[0],cell_pair[1])):
+                neighbors = self.find_neighbors(cell_pair[0],cell_pair[1])
+                for neighbor_cells in neighbors:
+                    if(neighbor_cells != cell_pair[1]):
+                        self.ARCS.add(neighbor_cells)
+                        # self.ARCS.add(neighbor_cells)
+
+        return True
+
+def guess(self, undetermined, visited, solve):
+        print len(undetermined)
+        if(solve):
+            solved, state_board = self.infer_improved()
+            if(solved):
+                return True, state_board
+            if (len(undetermined) == 0):
+                print "bad board"
+                return False, state_board
+        # cell = random.choice(undetermined)
+        # undetermined.remove(cell)
+        print "hi"
+        for cell in undetermined:
+            new_game = Sudoku(self.board)
+            rand_value = random.choice(list(new_game.board[cell]))
+            if((cell,rand_value) in visited):
+                print "visiting already seen nodes?"
+                new_game.board[cell].remove(rand_value)
+                rand_value = random.choice(list(new_game.board[cell]))
+
+            visited[(cell,rand_value)] = rand_value
+            new_game.board[cell] = set([rand_value])
+            new_set = undetermined
+            new_set.remove(cell)
+            solved, child_board = new_game.guess(new_set, visited, True)
+            if(solved):
+                return True, new_game.board
+            else: 
+                print "am i here"
+        visited = {}
+        print "confused"
+        return False, self.board
